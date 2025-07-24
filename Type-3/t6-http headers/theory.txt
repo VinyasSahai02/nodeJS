@@ -1,0 +1,20 @@
+consider a letter 
+inside the letter is the data
+on the letter there is info like TO , From etc .
+this To, From is the headers
+basically meta data associated with the res/req
+
+HTTP STATUS CODES
+informational response 100-199
+successful response 200-299
+redirectional response 300-399
+client error response 400-499
+server error response 500-599
+
+201- created
+204- no content
+400 - bad request
+401 - unauthorized
+402- payment required
+403- forbidden
+404 - not found

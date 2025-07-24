@@ -1,0 +1,19 @@
+GET - Get some data from the server
+whenever we enter a URL, browser makes a GET req by default
+
+POST - when you want to send and mutate some data in server. Create a new resource
+PUT - replace an entire resource
+PATCH - partially update a resource
+DELETE - remove a resource
+
++--------+----------------------------+--------------------+--------+-------------+
+| Method | Purpose                    | Has Request Body?  | Safe?  | Idempotent? |
++--------+----------------------------+--------------------+--------+-------------+
+| GET    | Fetch data                 | ❌ No              | ✅ Yes | ✅ Yes       |
+| POST   | Create a new resource      | ✅ Yes             | ❌ No  | ❌ No        |
+| PUT    | Replace a resource entirely| ✅ Yes             | ❌ No  | ✅ Yes       |
+| PATCH  | Update part of a resource  | ✅ Yes             | ❌ No  | ❌ Often not |
+| DELETE | Delete a resource          | ❌ Often no        | ❌ No  | ✅ Yes       |
++--------+----------------------------+--------------------+--------+-------------+
+
+Idempotent means that no matter how many times you make the same request, the result will be the same on the server (no side effects after the first request).

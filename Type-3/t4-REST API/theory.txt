@@ -1,0 +1,33 @@
+RESTFULL API
+these are some rules/best practices that we follow
+only then we can say that our server is built on rest API
+
+1. ALWAYS FOLLOW SERVER CLIENT ARCHITECTURE
+-- sever ek alg cheez hai aur client ek alag cheez
+when a servcer sends a res, it can be a text, image, htmldoc, json
+if the res is html(SSR) and the client is browser then it will simply render it
+but if the client is something like alexa then we cannot render html
+so we can say thet the client is dependent on the server which should not happen in restapi
+
+if the res is JSON or raw format, client can independently process this data and render it accordingly
+
+if we know that our client is browser then always send html
+but is we have moblie app, iot, smat devices then send raw data
+
+2. ALWAYS RESPECT ALL HTTP METHODS
+use http method appropriately
+like dont use post method to delete, use delete method
+
+note-
+to handle json and htlm in express change res.send() to res.json(json object)
+
+
+TASKS
+GET /users - list all users (html document render)
+GET /api/users - list all users json
+GET /api/users/1 - get user with id 1
+
+POST /api/users - Create new user
+PATCH /api/users/1 - edit user with id 1
+
+DELETE /api/users/1 - delete user with 1

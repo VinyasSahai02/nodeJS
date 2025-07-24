@@ -1,0 +1,3 @@
+request from client first goes to the middleware
+the middleware does some processing on the req
+there can be multiple middleware btw client and server

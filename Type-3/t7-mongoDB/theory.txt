@@ -1,0 +1,13 @@
+No-SQL documnet based database
+works on BSON format
+best for node application
+strong support for aggregation pipelines
+
+collections - similar to tables in SQL
+
+//MONGO SHELL COMMANDS
+show dbs 
+use <db_name> - switch database
+show collections 
+db.coll.find({}) - returns all data in collection 
+db.coll.insert() 

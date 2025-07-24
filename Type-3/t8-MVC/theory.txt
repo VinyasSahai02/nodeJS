@@ -1,0 +1,2 @@
+controller manipulates the model 
+model updates the view
